@@ -1,8 +1,8 @@
 {
-  "name": "boilerplate-base",
+  "name": "semantic-validation",
   "description": "This project is just a template for creation of new projects",
   "version": "0.0.0",
-  "private": true,
+  "private": false,
   "author": {
     "name": "Thiago O Santos <tos.oliveira@gmail.com>"
   },
@@ -12,12 +12,10 @@
   "files": [
     "dist"
   ],
-  "main": "dist/index.js",
   "scripts": {
     "doc": "rm -rf docs && npx typedoc && git add . && git commit -m 'chore: generating docs [skip ci]'",
     "lint": "npm run lint:format && npm run lint:style",
     "lint:fix": "npm run lint:format:fix && npm run lint:style:fix",
-    "build": "tsc -p tsconfig.build.json",
     "test": "jest test/unit",
     "test:watch": "jest test/unit --watch",
     "test:coverage": "jest test/unit --coverage",
@@ -34,8 +32,7 @@
     "lint:format:fix": "prettier --write '{src,test}/**/*.ts'",
     "lint:style": "eslint '**/*.ts'",
     "lint:style:fix": "eslint '**/*.ts' --fix",
-    "prepare": "husky install",
-    "prepublishOnly": "npm run build"
+    "prepare": "husky install"
   },
   "jest": {
     "moduleFileExtensions": [
@@ -62,11 +59,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/codibre/boilerplate-base.git"
+    "url": "https://github.com/maxmilhas-org/semantic-validation.git"
   },
-  "homepage": "https://github.com/codibre/boilerplate-base#readme",
+  "homepage": "https://github.com/maxmilhas-org/semantic-validation#readme",
   "bugs": {
-    "url": "https://github.com/codibre/boilerplate-base/issues"
+    "url": "https://github.com/maxmilhas-org/semantic-validation/issues"
   },
   "keywords": [],
   "license": "MIT",
@@ -92,5 +89,11 @@
     "typedoc-plugin-markdown": "^3.12.1",
     "typescript": "^4.5.2"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "bin": {
+    "bb-semantic-release": "scripts/bb-semantic-release.sh",
+    "bb-sync-master-develop": "scripts/bb-sync-master-develop.sh",
+    "bb-validate-hotfix": "scripts/bb-validate-hotfix.sh",
+    "bb-validate-release": "scripts/bb-validate-release.sh"
+  }
 }
