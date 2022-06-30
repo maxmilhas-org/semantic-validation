@@ -1,3 +1,10 @@
+# [0.2.0](https://github.com/maxmilhas-org/semantic-validation/compare/v0.1.0...v0.2.0) (2022-06-30)
+
+
+### Features
+
+* adding validate-version script ([971731e](https://github.com/maxmilhas-org/semantic-validation/commit/971731e00be59706f3d4eb7c3c32c1dfc11f0300))
+
 # [0.1.0](https://github.com/maxmilhas-org/semantic-validation/compare/v0.0.0...v0.1.0) (2022-06-30)
 
 
