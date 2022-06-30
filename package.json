@@ -94,6 +94,7 @@
     "bb-semantic-release": "scripts/bb-semantic-release.sh",
     "bb-sync-master-develop": "scripts/bb-sync-master-develop.sh",
     "bb-validate-hotfix": "scripts/bb-validate-hotfix.sh",
-    "bb-validate-release": "scripts/bb-validate-release.sh"
+    "bb-validate-release": "scripts/bb-validate-release.sh",
+    "validate-nodejs-version": "scripts/validate-nodejs-version.sh"
   }
 }
