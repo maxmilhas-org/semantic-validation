@@ -25,7 +25,6 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: "16.x"
-      - run: previousVersion=$(sed 's/.*"version"&#58; "\(.*\)".*/\1/;t;d' ./package.json)
       - run: npm i -g @semantic-release/changelog @semantic-release/commit-analyzer @semantic-release/git @semantic-release/github @semantic-release/exec @semantic-release/npm @semantic-release/release-notes-generator semantic-release
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
@@ -33,10 +32,6 @@ jobs:
           HUSKY: 0
           CI: true
       - run: npx semantic-release --ci
-      - run: finalVersion=$(sed 's/.*"version"&#58; "\(.*\)".*/\1/;t;d' ./package.json)
-      - run: |
-          if [ "$previousVersion" != "$finalVersion" ]; then
-            git push
-          fi
+      - run: git push
         env:
           NPM_TOKEN: ${{secrets.NPM_TOKEN}}
