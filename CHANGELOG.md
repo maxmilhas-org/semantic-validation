@@ -1,3 +1,10 @@
+## [0.2.1](https://github.com/maxmilhas-org/semantic-validation/compare/v0.2.0...v0.2.1) (2022-06-30)
+
+
+### Bug Fixes
+
+* fixing release validation ([82bf6a3](https://github.com/maxmilhas-org/semantic-validation/commit/82bf6a3e38a6b4756ab0c16b00a5267a707b55a3))
+
 # [0.2.0](https://github.com/maxmilhas-org/semantic-validation/compare/v0.1.0...v0.2.0) (2022-06-30)
 
 
