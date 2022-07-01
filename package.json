@@ -10,7 +10,7 @@
     "node": ">=10"
   },
   "files": [
-    "dist"
+    "scripts"
   ],
   "scripts": {
     "doc": "rm -rf docs && npx typedoc && git add . && git commit -m 'chore: generating docs [skip ci]'",
