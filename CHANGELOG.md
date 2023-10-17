@@ -1,3 +1,15 @@
+# [0.3.0](https://github.com/maxmilhas-org/semantic-validation/compare/v0.2.1...v0.3.0) (2023-10-17)
+
+
+### Bug Fixes
+
+* updating semantic release node version ([7ab113f](https://github.com/maxmilhas-org/semantic-validation/commit/7ab113fa489df7376175e1208d62a5cfb0af15c8))
+
+
+### Features
+
+* add commit scope validation ([#3](https://github.com/maxmilhas-org/semantic-validation/issues/3)) ([7a51085](https://github.com/maxmilhas-org/semantic-validation/commit/7a51085cfc65a7b187fbcc5a2d7fab9172fee042))
+
 ## [0.2.1](https://github.com/maxmilhas-org/semantic-validation/compare/v0.2.0...v0.2.1) (2022-06-30)
 
 
