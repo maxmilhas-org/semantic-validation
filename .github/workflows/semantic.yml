@@ -22,9 +22,9 @@ jobs:
       - run: printf "//`node -p \"require('url').parse('https://registry.npmjs.org').host\"`/:_authToken=${NPM_TOKEN}\n" >> ~/.npmrc
       - run: npm ci
       - run: npm test
-      - uses: actions/setup-node@v1
+      - uses: actions/setup-node@v3
         with:
-          node-version: "16.x"
+          node-version: "lts/*"
       - run: npm i -g @semantic-release/changelog @semantic-release/commit-analyzer @semantic-release/git @semantic-release/github @semantic-release/exec @semantic-release/npm @semantic-release/release-notes-generator semantic-release
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
