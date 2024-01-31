@@ -2,7 +2,7 @@
 
 echo Validating commit against $BITBUCKET_PR_DESTINATION_BRANCH
 git fetch origin $BITBUCKET_PR_DESTINATION_BRANCH:$BITBUCKET_PR_DESTINATION_BRANCH
-COMMITS=$(if [[ $(git log $BITBUCKET_PR_DESTINATION_BRANCH.. | grep -E '(fix|feat|perf|revert)(\([a-zA-Z0-9\-_\s]+\))?:') = '' ]]; then echo 0; else echo 1; fi)
+COMMITS=$(if [[ $(git log $BITBUCKET_PR_DESTINATION_BRANCH.. | grep -E '(fix|feat|perf|revert|refactor|docs|ci|build|test|chore)(\([a-zA-Z0-9\-_\s]+\))?:') = '' ]]; then echo 0; else echo 1; fi)
 
 if [[ $COMMITS = '0' ]]; then echo 'No changes were found!'; exit 1; fi
 
