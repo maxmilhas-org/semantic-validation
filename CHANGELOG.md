@@ -1,3 +1,10 @@
+# [0.4.0](https://github.com/maxmilhas-org/semantic-validation/compare/v0.3.0...v0.4.0) (2024-01-31)
+
+
+### Features
+
+* add more commit types ([#4](https://github.com/maxmilhas-org/semantic-validation/issues/4)) ([b6a1b83](https://github.com/maxmilhas-org/semantic-validation/commit/b6a1b8318619a32292f2a5ef2a1f8675287ed156))
+
 # [0.3.0](https://github.com/maxmilhas-org/semantic-validation/compare/v0.2.1...v0.3.0) (2023-10-17)
 
 
